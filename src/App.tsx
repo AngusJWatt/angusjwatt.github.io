@@ -14,19 +14,18 @@ const DownloadLink = ({ fileName, children }: { fileName: string; children: Reac
 };
 
 const App = () => (
-    <div className="App">
-      <header className="App-header">
-        <h1>My App</h1>
-      </header>
-      <main>
-        <p>
-          Download my CV:&nbsp;
-          <DownloadLink fileName="Angi Watt CV.docx">.docx</DownloadLink>,&nbsp;
-          <DownloadLink fileName="Angi Watt CV.pdf">.pdf</DownloadLink>.
-        </p>
-      </main>
-    </div>
-  );
-
+  <div className="App">
+    <header className="App-header">
+      <h1>Angi Watt</h1>
+    </header>
+    <main>
+      <p>
+        Download my CV:&nbsp;
+        <DownloadLink fileName="Angi Watt CV.docx">.docx</DownloadLink>,&nbsp;
+        <DownloadLink fileName="Angi Watt CV.pdf">.pdf</DownloadLink>.
+      </p>
+    </main>
+  </div>
+);
 
 export default App;
