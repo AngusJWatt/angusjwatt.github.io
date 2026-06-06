@@ -1,19 +1,16 @@
-import React, { useEffect, ReactNode } from 'react';
+import React, { useState, useEffect, ReactNode } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const DownloadLink = ({ id, fileName, children }: { id: string; fileName: string; children: ReactNode }) => {
+const DownloadLink = ({ fileName, children }: { fileName: string; children: ReactNode }) => {
+  const [href, setHref] = useState('');
   useEffect(() => {
     fetch(`/${fileName}`).then(res => res.blob()).then(blob => {
-      const url = window.URL.createObjectURL(blob);
-      const link = document.getElementById(id) as HTMLAnchorElement;
-      link.href = url;
-      link.setAttribute('download', fileName);
+      setHref(window.URL.createObjectURL(blob));
     }).catch(err => console.error(err));
-  }, [id, fileName]);
+  }, [fileName]);
   return (
-    // eslint-disable-next-line
-    <a id={id}>{children}</a>
+    <a href={href} download={fileName}>{children}</a>
   );
 };
 
@@ -26,8 +23,8 @@ const App = () => (
       <main>
         <p>
           Download my CV:&nbsp;
-          <DownloadLink fileName="Angi Watt CV.docx" id="docx">.docx</DownloadLink>,&nbsp;
-          <DownloadLink fileName="Angi Watt CV.pdf" id="pdf">.pdf</DownloadLink>.
+          <DownloadLink fileName="Angi Watt CV.docx">.docx</DownloadLink>,&nbsp;
+          <DownloadLink fileName="Angi Watt CV.pdf">.pdf</DownloadLink>.
         </p>
       </main>
     </div>
