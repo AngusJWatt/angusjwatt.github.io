@@ -2,25 +2,33 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+const handleClick = (e: any) => {
+  e.preventDefault();
+  fetch('/Angi Watt CV.docx').then(res => res.blob()).then(blob => {
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Angi Watt CV.docx');
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode?.removeChild(link);
+    }).catch(err => console.error(err));
+};
+
+const App = () => (
     <div className="App">
       <header className="App-header">
+        <h1>My App</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Download my CV: <a href="/Angi Watt CV.docx" download onClick={handleClick}>.docx</a>.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+        Hello
+      </main>
     </div>
   );
-}
+
 
 export default App;
