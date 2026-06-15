@@ -21,8 +21,8 @@ const App = () => (
     <main>
       <p>
         Download my CV:&nbsp;
-        <DownloadLink fileName="Angi Watt CV.docx">.docx</DownloadLink>,&nbsp;
-        <DownloadLink fileName="Angi Watt CV.pdf">.pdf</DownloadLink>.
+        <DownloadLink fileName="Angi Watt CV 2026.docx">.docx</DownloadLink>,&nbsp;
+        <DownloadLink fileName="Angi Watt CV 2026.pdf">.pdf</DownloadLink>.
       </p>
     </main>
   </div>
