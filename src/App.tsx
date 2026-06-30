@@ -33,7 +33,8 @@ const App = () => (
         <p>
           I became adept at shaping robust, maintainable interfaces while strengthening ownership across codebases,
           pipelines, and deployments. I have been a trusted contributor who embeds inclusive design principles, improves
-          delivery reliability, and strengthens platform quality through rigorous collaboration and problem solving.</p>
+          delivery reliability, and strengthens platform quality through rigorous collaboration and problem solving.
+        </p>
         <p>
           Valued for bringing clarity to complex technical environments and enabling teams to deliver resilient,
           high-performing digital products.
@@ -41,27 +42,27 @@ const App = () => (
         <h2>Key Skills</h2>
         <ul className="bullet-points">
           <li>
-            Work experience: 6 years industry experience in with ReactJS/TS, HTML/CSS, NodeJS, GraphQL, WCAG/ARIA, and
+            <b>Work experience:</b> 6 years industry experience in ReactJS/TS, HTML/CSS, NodeJS, GraphQL, WCAG/ARIA, and
             CI/CD.
           </li>
           <li>
-            Eye for detail: Awarded for delivery of high-quality code which went above-and-beyond in delivering
+            <b>Eye for detail:</b> Awarded for delivery of high-quality code which went above-and-beyond in delivering
             accessible, WCAG/ARIA-compliant components.
           </li>
           <li>
-            Communication: Excellent verbal skills, with experience working in a Agile scrum and interacting between
-            different teams and departments.
+            <b>Communication:</b> Excellent verbal skills, with experience working in a Agile scrum and interacting
+            between different teams and departments.
           </li>
           <li>
-            Adaptability: Quick to develop and refine skills as needed, experience moving effectively between teams and
-            frameworks.
+            <b>Adaptability:</b> Quick to develop and refine skills as needed, experience moving effectively between
+            teams and frameworks.
           </li>
           <li>
-            Comprehension: Knowledgable of systems analysis and development, keen to research, documenting and sharing
-            my skills as I develop them.
+            <b>Comprehension:</b> Knowledgable of systems analysis and development, keen to research, documenting and
+            sharing my skills as I develop them.
           </li>
           <li>
-            Additional competencies: Working knowledge of Java, SQL, shell scripting, and C.
+            <b>Additional competencies:</b> Working knowledge of Java, SQL, shell scripting, and C.
           </li>
         </ul>
         <h2>Employment Experience</h2>
